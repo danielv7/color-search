@@ -7,6 +7,8 @@ git clone https://github.com/danielv7/color-search.git
 npm install
 npm run serve
 ```
+### Also Hosted on Heroku
+See [https://css-color-selection.herokuapp.com/](https://css-color-selection.herokuapp.com/).
 
 
 ## Author
@@ -16,7 +18,6 @@ npm run serve
 ## Notes
 
 - Vue.js, Javascipt, HTML, & CSS
-
 
 
 
