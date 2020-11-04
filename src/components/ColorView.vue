@@ -89,11 +89,11 @@
       this.$emit('send-color', colorId)
     }
 	},
-	computed: {
-		cssColorData () {
-			return this.paginate(this.posts);
-		}
-	},
+	//computed: {
+	//	cssColorData () {
+	//		return this.paginate(this.posts);
+	//	}
+	//},
 	watch: {
 		posts () {
 			this.setPages();
