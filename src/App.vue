@@ -1,10 +1,9 @@
 <template>
   <div id="app">
+
     <HeaderTop
       v-on:search-value="searchInput($event)"
     />
-    {{searchValue}}
-
     <SideNavBar
       v-on:random-color="expandColor($event)"
     />
@@ -19,12 +18,10 @@
       v-on:clear-color="clearColor()"
     />
 
-
   </div>
 </template>
 
 <script>
-  //import { slackData } from './assets/slackData'
   import HeaderTop from '@/components/HeaderTop.vue'
   import SideNavBar from '@/components/SideNavBar.vue'
   import ColorView from '@/components/ColorView.vue'
@@ -38,7 +35,6 @@
       SideNavBar,
       ColorView,
       DetailView,
-   
     },
     data() {
       return {
@@ -68,7 +64,6 @@
       },
       clearColor() {
         this.colorToExpand = []
-
       },
     },
   }
@@ -77,8 +72,6 @@
 
 <style>
 button {
-  background: #38d8a3;
-  border: 1px solid #38d8a3;
   margin: 2px;
   font-family: "Times New Roman", Times, serif;
 }
@@ -86,8 +79,5 @@ button:hover {
   background-color: rgb(77, 82, 78); 
   border: 1px solid rgb(77, 82, 78);
 }
-.error-message {
-    color: #d33c40;
-  }
   
 </style>
