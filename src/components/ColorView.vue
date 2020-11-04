@@ -44,7 +44,7 @@
 
 		<ul class="vertical-center">
 				<button type="button" class="page-link" v-if="page != 1" @click="page--"> Previous </button>
-				<button type="button" class="page-link" v-for="(pageNumber,index) in pages.slice(page-1, page+5)" :key="index+ Math.random()" @click="page = pageNumber"> {{pageNumber}} </button>
+				<button type="button" class="page-link" v-for="(pageNumber,index) in pages.slice(page-1, page+5)" :key="index" @click="page = pageNumber"> {{pageNumber}} </button>
 				<button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Next </button>
 		</ul>	
 
@@ -96,7 +96,7 @@
 	},
 	watch: {
 		posts () {
-			this.setPages();
+      this.setPages();
 		}
 	},
 	created(){
