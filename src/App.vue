@@ -10,6 +10,7 @@
     />
     <ColorView  
       v-bind:cssColorData="cssColorData" 
+      v-bind:size="size"
       v-on:send-color="expandColor($event)"
     />
     <DetailView
@@ -45,6 +46,7 @@
         cssColorData: [ ...cssData.red, ...cssData.orange, ...cssData.yellow, ...cssData.green, ...cssData.blue, ...cssData.purple, ...cssData.brown, ...cssData.gray], 
         colorId: '',
         colorToExpand: [],
+        size: 12,
       }
     },
     methods: {
