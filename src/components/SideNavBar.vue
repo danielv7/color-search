@@ -60,6 +60,8 @@
   outline-color: black;
   margin-left: 10px;
   margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .btn:hover {
   background-color: rgb(46, 46, 40);
