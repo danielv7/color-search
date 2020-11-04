@@ -35,7 +35,7 @@
     </section>
     -->
     <section class="flex-container">
-      <button v-for="color in cssColorData" :key="color.id" class="card" @click="handleClick(color.id)" v-bind:style="{ backgroundColor: color.HexCode}">
+      <button v-for="color in cssColorData" :key="color.id"  class="card" @click="handleClick(color.id)" v-bind:style="{ backgroundColor: color.HexCode}">
         <div class="container">
           {{ color.HexCode }} 
         </div>
