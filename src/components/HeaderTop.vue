@@ -26,8 +26,6 @@
           this.searchInput = '';
         }, 
     },
-
-
  
 }
 </script>
@@ -42,10 +40,8 @@ nav {
   padding-right: 3%;
   padding-left: 3%;
 }
-
 input {
     background-color: white;
     width: 250px;
   }
-
 </style>

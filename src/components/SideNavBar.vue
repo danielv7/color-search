@@ -1,17 +1,16 @@
 <template>
- <div class="sidenavbar">
-     <button class="btn" @click="handleClick()">Random Color</button>
-     <button>Red</button>
-     <button>Orange</button>
-     <button>Yellow</button>
-     <button>Green</button>
-     <button>Blue</button>
-     <button>Purple</button>
-     <button>Brown</button>
-     <button>Gray</button>
+  <div class="sidenavbar">
+    <button class="btn" @click="handleClick()">Random Color</button>
+    <button>Red</button>
+    <button>Orange</button>
+    <button>Yellow</button>
+    <button>Green</button>
+    <button>Blue</button>
+    <button>Purple</button>
+    <button>Brown</button>
+    <button>Gray</button>
      <button></button>
-
-</div>
+  </div>
 </template>
 
 <script>
@@ -21,7 +20,6 @@
 		handleClick () {	
       this.randomColorNum  = String(Math.floor(Math.random() * 103) + 1)
       this.$emit('random-color', this.randomColorNum)
-      //console.log(this.randomColorNum)
     },
   },
  
@@ -62,12 +60,10 @@
   border-radius: 10px;
   outline-color: black;
   margin-left: 10px;
-
 }
 .btn:hover {
   background-color: rgb(46, 46, 40);
 }
-
 button {
   background: #D3D3D3;
   border: 1px solid #D3D3D3;
