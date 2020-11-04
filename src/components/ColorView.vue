@@ -42,26 +42,15 @@
       </button>
     </section>
 
-
-
-
-			<ul class="vertical-center">
-					<button type="button" class="page-link" v-if="page != 1" @click="page--"> Previous </button>
-					<button type="button" class="page-link" v-for="(pageNumber,index) in pages.slice(page-1, page+5)" :key="index+ Math.random()" @click="page = pageNumber"> {{pageNumber}} </button>
-					<button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Next </button>
-			</ul>	
+		<ul class="vertical-center">
+				<button type="button" class="page-link" v-if="page != 1" @click="page--"> Previous </button>
+				<button type="button" class="page-link" v-for="(pageNumber,index) in pages.slice(page-1, page+5)" :key="index+ Math.random()" @click="page = pageNumber"> {{pageNumber}} </button>
+				<button type="button" @click="page++" v-if="page < pages.length" class="page-link"> Next </button>
+		</ul>	
 
  
   </div>
 
-
-  <!--<tbody class="small-container">
-        <tr v-for="color in cssColorData" :key="color.id">
-          <td>{{ color.color }}</td>
-          <td>{{ color.HexCode }}</td>
-        </tr>
-      </tbody>
-      -->
 
 </template>
 
@@ -100,11 +89,11 @@
       this.$emit('send-color', colorId)
     }
 	},
-	//computed: {
-	//	cssColorData () {
-	//		return this.paginate(this.posts);
-	//	}
-	//},
+	computed: {
+		cssColorData () {
+			return this.paginate(this.posts);
+		}
+	},
 	watch: {
 		posts () {
 			this.setPages();
