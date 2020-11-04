@@ -18,18 +18,6 @@
       v-on:clear-color="clearColor()"
     />
 
-<!--
-    <h1 class="vertical-center large-container">Search Upcoming Meeting Information</h1>
-
-    <SearchField 
-      v-on:search-value="searchInput($event)"
-    />
-    <SlackResult 
-      v-bind:slacks="slacks" 
-      v-on:delete-slack="deleteSlack($event)"
-      v-on:toggle-slackpin="toggleSlackPin($event)"
-    />
-    -->
 
   </div>
 </template>
