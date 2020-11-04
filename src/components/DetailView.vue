@@ -8,8 +8,6 @@
       </button>
     </section>
       <button style = "position:fixed; left:650px" class="btn" @click="handleClick()">Clear</button>
-   
-
   </div>
 </template>
 
@@ -24,8 +22,6 @@
         this.$emit('clear-color')
     },
   },
-    
-  
 }
 </script>
 
@@ -42,14 +38,11 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
-
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 10px;
 }
-
 .card {
   outline: none;
   border: 1px solid black;
@@ -60,7 +53,6 @@
   position: relative;
   border-radius: 5px;
 }
-
 .container {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
@@ -76,7 +68,6 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
 .btn {
   border: 1px solid black;
   background-color: white;
@@ -91,8 +82,5 @@
   padding-right: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
-  
 }
-
-
 </style>
